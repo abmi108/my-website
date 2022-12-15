@@ -23,17 +23,18 @@
     <meta name="keywords" content="[abmi108], [abhijit mishra], javascript, html, css, react, reactjs, next, nextjs, tailwind, bootstrap, graphql, chakra ui, typescript" />
     <!-- Todo: improve your SEO by adding a small description of you -->
     <meta name="description" content="[Abhijit Mishra] | Software Development Engineer" />
-<!-- 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
+
     <script src="https://kit.fontawesome.com/64f230987a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.scss" />
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+  ></script>
+    
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -46,6 +47,10 @@
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
+
+        <canvas id="canvas" style="position: absolute; width: 100%; height: 100%; top:0; left:0; z-index: -9;">
+
+        </canvas>
         <h1 class="hero-title load-hidden">
           Hi, my name is <span class="text-color-main">Abhijit Mishra</span>
           <br />
@@ -76,6 +81,7 @@
           </div>
 
       </div>
+
     </section>
     <!-- /END Hero Section -->
 
